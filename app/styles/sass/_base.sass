@@ -1,0 +1,17 @@
+#{headings(all)}
+	font-weight: bold
+
+p
+	+trailer
+
+h2
+	+adjust-font-size-to(ms(3))
+
+@import buttons
+
+div[role="main"]
+	+container
+	+susy-grid-background
+	+at-breakpoint($break)
+		+susy-grid-background
+		+set-container-width

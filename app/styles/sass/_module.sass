@@ -1,0 +1,75 @@
+.title__logo
+	text-align: center
+	+adjust-font-size-to(ms(0))
+	line-height: 0
+	+trailer(1, ms(0))
+
+.title__headline
+	+adjust-font-size-to(ms(4))
+	+trailer(1, ms(4))
+
+[class*=project__elements]
+	+trailer(1)
+
+[class*=rowset]
+
+[class*=rowset] > li
+	clear: both
+
+[class*=gridset]
+	+clearfix
+	> li
+		+span-columns(2)
+		&:nth-of-type(3n)
+			+omega
+
+[class*=__fig]
+	+adjust-font-size-to(ms(12))
+	display: block
+	background: none
+
+.color__fig--00
+	background: black
+
+.color__fig--01
+	background: gray
+
+.color__fig--02
+	background: darkgray
+
+.color__fig--0
+	background: white
+
+.color__fig--1
+	background: lightgray
+
+.color__fig--2
+	background: #c0c0c1
+
+.texture__fig--00
+	background: yellow
+
+.texture__fig--01
+	background: pink
+
+.texture__fig--02
+	background: blue
+
+.texture__fig--0
+	background: orange
+
+.texture__fig--1
+	background: lime
+
+.texture__fig--2
+	background: green
+
+.pattern__fig--00
+	background: #000
+
+.pattern__fig--01
+	background: #111
+
+.pattern__fig--02
+	background: #222
+

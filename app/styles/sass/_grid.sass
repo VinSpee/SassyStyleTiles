@@ -1,0 +1,15 @@
+@import susy
+
+$total-columns   : 6 // 7 columns
+$column-width    : 4em // columns are 4em wide
+$gutter-width    : .5em // with 1em gutters
+$grid-padding    : .5em // and 1em padding on the grid container
+$break           : 8
+$container-style : fluid
+
++border-box-sizing
+
+@mixin susy-grid-background
+	+grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $grid-padding, $force-fluid: true)
+
+$show-grid-backgrounds: true
